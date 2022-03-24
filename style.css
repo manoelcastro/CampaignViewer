@@ -25,6 +25,11 @@ body {
 
 main {
   width: 60%;
+  height: 60vh;
+}
+
+#logo {
+  height: 17vh;
 }
 
 h1 {
@@ -36,7 +41,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  line-height: 2rem;
+  line-height: 5vh;
 }
 
 .labels {
@@ -62,4 +67,24 @@ form {
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.fields + button:hover {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    height: 92vh;
+    margin: 4vh auto;
+  }
+
+  main {
+    margin: 0;
+    width: 70vw;
+
+  }
 }
