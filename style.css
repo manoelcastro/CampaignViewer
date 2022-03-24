@@ -1,0 +1,65 @@
+html, body, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #2e81ff;
+}
+
+.container {
+  margin: 7rem auto;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  width: 60%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #104c7b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.labels {
+  font-weight: 700;
+  color: #2d2d2d;
+  font-size: 1rem;
+}
+
+.fields {
+  height: 2.5rem;
+  font-size: 1.1rem;
+  color: #908d9e;
+  font-weight: 300;
+  outline: invert;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+}
+
+.fields + button {
+  margin-top: 1rem;
+  border: 0;
+  background-color: #21ba45;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}

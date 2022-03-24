@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <!--Roboto Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+
+  <title>SimpleAds CampaignViewer Tool</title>
+</head>
+<body>
+  <div class="container">
+    <img src="https://simpleads.com.br/wp-content/uploads/2021/09/logo@2x.png" alt="Logo SimpleAds">
+    <main>
+      <h1>CampaignViewer Tool</h1>
+      <form name="screenShotToolForm" onsubmit="handleOnSubmit()" >
+        <label for="urlField" class="labels">
+          URL
+        </label>
+        <input id="urlField" class="fields" type="url" name="urlField" />
+        <label for="idField" class="labels">
+          ID da Inserção
+        </label>
+        <input id="idField" class="fields" type="number" name="idField" />
+        <label for="formatField" class="labels">
+          Formato
+        </label>
+        <select name="formatField" class="fields" id="formatField">
+          <option value="excroll">excroll</option>
+          <option value="footer">footer</option>
+          <option value="slider">slider</option>
+          <option value="edge">edge</option>
+          <option value="inarticle">inarticle</option>
+        </select>
+        <button type="submit" class="fields">Carregar Visualização</button>
+      </form>
+    </main>
+  </div>
+  <script src="handle.js"></script>
+</body>
+</html>
